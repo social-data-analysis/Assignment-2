@@ -1,0 +1,84 @@
+<html>
+<head>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body onscroll="print()">
+  <div class="header">
+    <div class="title">
+    Assignment 2
+   </div>
+   <div class="container" onclick="myFunction(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="text">
+      <div class="subtitle">Part 1: Telling Data Stories</div>
+        <p>The questions below refer to Edward Segel and Jeffrey Heer. <a href="http://vis.stanford.edu/files/2010-Narrative-InfoVis.pdf">Narrative Visualization: Telling Stories with Data.</a></p>
+        <ul>
+          <li>
+            What is the Oxford English Dictionary's definition of a narrative?
+            <p>An account of a series of events, facts, etc., given in order and with the establishing of connections between them.</p>
+          </li>
+          <li>
+            What is your favorite visualization among the examples in section 3? Explain why in a few words.
+            <p>Our favorite visualization is number 4, the Gapminder Human Development Trends. The checklist structure gives a nice quick overview, comments help to identify key observations and the martini glass structure guides the user with the possible interactions.</p>
+          </li>
+          <li>
+            What's the point of Figure 7?
+            <p>Figure 7 shows an analysis of 58 visualizations from a narrative point of view. By analyzing these graphics, we can draw interesting conclusions based on appearing patterns in the data like the lack of storytelling techniques in general in narrative visualizations.</p>
+          </li>
+          <li>
+            Use Figure 7 to find the most common design choice within each category for the Visual narrative and Narrative structure (the categories within visual narrative are 'visual structuring', 'highlighting', etc).
+            <p>
+              <ul>
+                  <li>Visual Structuring: Consistent Visual Platform</li>
+                  <li>Highlighting: Feature Distinction</li>
+                  <li>Transition Guidance: Object Continuity</li>
+                  <li>Ordering: User Directed Path</li>
+                  <li>Interactivity: Very Limited Interactivity</li>
+                  <li>Messaging: Captions / Headlines</li>   
+              </ul>
+            </p>
+          </li>
+          <li>
+              Check out Figure 8 and section 4.3.
+              <P>
+                <ul>
+                    <li>
+                      What is your favorite genre of narrative visualization? Why?
+                      <p>Our favorite genre is annotated chart. It is neat and clean, clearly focusing on one thing at a time and helps the reader by commenting on important features of the graphics.</p>                
+                    </li>
+                    <li>
+                        What is your least favorite genre? Why?
+                      <p>Our least favorite genre is comic strip because there isn’t any indication or emphasis on the more important information. The reader needs to go through all the subparts to be able to identify and filter the most important aspects.</p>                
+                    </li>
+                  </ul>
+              </P>
+          </p>
+          </li>
+        </ul>
+      <div class="subtitle">Part 2: Visualizing Murders over Time</div>
+      <p>Create a visualization of murders in all of NYC over time.</p>
+      <br/>
+      <div class="chartTitle">Murder incident reports each day between 2006-2016</div>
+      <div class="histogram"></div>
+      <br/><br/><br/><br/>
+      <div class="chartTitle">NYC boroughs</div>
+      <div class="map"></div>
+    </div>
+  </div>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="./murders.js"></script>
+  <script>
+    function print() {
+      var previous = window.scrollY;
+      window.addEventListener('scroll', function(){
+        // window.scrollY > previous ? console.log('down') : console.log('up');
+        previous = window.scrollY;
+    });    }
+  </script>
+</body>
+</html>

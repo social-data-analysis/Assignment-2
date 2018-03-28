@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700');
+
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  align-items: center;
+  /* background: linear-gradient(to right, #927c92, #7684a9, #8180d8, #607D8B); */
+  border-bottom: solid 1px #e0e0e0;
+  box-shadow: 0 1px 5px #e0e0e0;
+  /* color: white; */
+  color: #a983ca;
+  display: flex;
+  font-size: 2em;
+  font-weight: 600;
+  height: 180px;
+  /* height: 75px; */
+}
+
+.title {
+  margin-left: 12%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.content {
+  flex: auto;
+  overflow-y: auto;
+}
+
+.text {
+  margin: 0 12%;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 50px 0 30px 0;
+}
+
+.footer {
+  background: url("./skyline.png");
+  height: 25px;
+}
+
+.doughnutText {
+  color: white;
+}
+
+.area {
+  opacity: 1;
+  stroke: none;
+}
+.area:hover {
+  fill: #E2E062;
+}
+
+.tooltip {
+  position: absolute;
+  text-align: center;
+  padding: 10px;
+  background: lightsteelblue;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+  text-transform: lowercase;
+}
+
+.tooltip::first-letter {
+  text-transform: uppercase;
+}
+
+.selection {
+  fill: #ADD8E6;
+  stroke: #ADD8E6;
+  fill-opacity: 0.3;
+  stroke-opacity: 0.7;
+  stroke-width: 2;
+  stroke-dasharray: 5, 5;
+}
+
+.container {
+  display: flex;
+  margin: 0;
+}
+
+.left-half, .right-half {
+  flex: 1;
+}
+
+.container .subtitle {
+  margin: 0;
+  text-align: center;
+}
+
+.brushed {
+  fill: #E2E062;
+  /* stroke: black;
+  stroke-width: 1px; */
+  opacity: 1.0;
+}
+
+.non_brushed {
+  fill: black;
+  opacity: 0.6;
+}
+
+li {
+  font-weight: bold;
+}
+
+li p {
+  font-weight: 400;
+}
+
+a, a:visited, a:active, a:hover {
+  color: #a983ca;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+ul > li > ul > li {
+  font-weight: 400;
+}
+
+.chartTitle {
+  font-weight: bold;
+  text-align: center;
+}
+
+.map {
+  text-align: center;
+}
