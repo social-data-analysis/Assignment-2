@@ -18,22 +18,23 @@ body {
 
 .header {
   align-items: center;
-  /* background: linear-gradient(to right, #927c92, #7684a9, #8180d8, #607D8B); */
   border-bottom: solid 1px #e0e0e0;
   box-shadow: 0 1px 5px #e0e0e0;
-  /* color: white; */
   color: #a983ca;
   display: flex;
   font-size: 2em;
   font-weight: 600;
   height: 180px;
-  /* height: 75px; */
 }
 
 .title {
   margin-left: 12%;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.header .title {
+  cursor: pointer;
 }
 
 .content {
@@ -108,8 +109,6 @@ body {
 
 .brushed {
   fill: #E2E062;
-  /* stroke: black;
-  stroke-width: 1px; */
   opacity: 1.0;
 }
 
@@ -143,4 +142,35 @@ ul > li > ul > li {
 
 .map {
   text-align: center;
+}
+
+.label {
+  fill: white;
+  font-weight: bold;
+  opacity: 1;
+  position: relative;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button, .button:hover {
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  padding: 6px 12px;
+  font-size: 14px;
+  text-align: center;
+  outline: none;
+}
+
+.button {
+  background: #49A1B4;
+}
+
+.button:hover {
+  background: #357786;
 }

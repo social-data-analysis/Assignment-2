@@ -2,7 +2,7 @@
 <head>
   <link rel="stylesheet" href="./style.css" />
 </head>
-<body onscroll="print()">
+<body>
   <div class="header">
     <div class="title">
     Assignment 2
@@ -64,7 +64,7 @@
       <p>Create a visualization of murders in all of NYC over time.</p>
       <br/>
       <div class="chartTitle">Murder incident reports each day between 2006-2016</div>
-      <div class="histogram"></div>
+      <div class="histogram"></div>      
       <br/><br/><br/><br/>
       <div class="chartTitle">NYC boroughs</div>
       <div class="map"></div>
@@ -72,13 +72,5 @@
   </div>
   <script src="https://d3js.org/d3.v4.min.js"></script>
   <script src="./murders.js"></script>
-  <script>
-    function print() {
-      var previous = window.scrollY;
-      window.addEventListener('scroll', function(){
-        // window.scrollY > previous ? console.log('down') : console.log('up');
-        previous = window.scrollY;
-    });    }
-  </script>
 </body>
 </html>
